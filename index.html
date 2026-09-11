@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Buzón CUC Escucha</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-content">
+                <h1>📢 Buzón CUC Escucha</h1>
+                <p>Tu voz mejora la Universidad de la Costa</p>
+            </div>
+        </header>
+
+        <main class="container">
+            <section class="intro">
+                <h2>Cuéntanos tu sugerencia</h2>
+                <p>
+                    La Facultad de Ingeniería quiere escucharte. Comparte tus
+                    ideas o sugerencias sobre bienestar, servicios, clases,
+                    inclusión, espacios académicos o procesos institucionales.
+                </p>
+            </section>
+
+            <section class="form-section">
+                <form id="formSugerencia">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo</label>
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="Ej: Juan Pérez"
+                            required
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="programa">Programa académico</label>
+                        <input
+                            type="text"
+                            id="programa"
+                            name="programa"
+                            placeholder="Ej: Ingeniería de Sistemas"
+                            required
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="categoria">Categoría</label>
+                        <select id="categoria" name="categoria" required>
+                            <option value="">Selecciona una categoría</option>
+                            <option value="bienestar">Bienestar</option>
+                            <option value="servicios">Servicios</option>
+                            <option value="clases">Clases</option>
+                            <option value="inclusion">Inclusión</option>
+                            <option value="espacios">Espacios</option>
+                            <option value="procesos">
+                                Procesos académicos
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sugerencia">Tu sugerencia</label>
+                        <textarea
+                            id="sugerencia"
+                            name="sugerencia"
+                            rows="5"
+                            placeholder="Escribe aquí tu idea o sugerencia..."
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-enviar">
+                        Enviar sugerencia
+                    </button>
+                </form>
+
+                <div id="mensajeExito" class="mensaje-exito" hidden>
+                    ✅ ¡Gracias! Tu sugerencia fue registrada correctamente.
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 Universidad de la Costa - Facultad de Ingeniería</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
